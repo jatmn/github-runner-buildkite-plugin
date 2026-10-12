@@ -5,6 +5,9 @@ limited maintenance budget. Acceptance depends on whether a change supports the
 project's direction, can be validated, and remains practical to maintain. A
 useful idea may still be declined or deferred.
 
+Coding agents must also follow [AGENTS.md](AGENTS.md), which maps the codebase and
+documents implementation, security, and validation boundaries.
+
 ## Before starting
 
 1. Search issues and open or recently closed pull requests for related work.
