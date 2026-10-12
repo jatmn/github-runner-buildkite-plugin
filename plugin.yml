@@ -1,0 +1,20 @@
+name: GitHub runner
+description: Run ephemeral GitHub Actions runners in an existing Buildkite pool
+author: Project contributors
+requirements:
+  - python3
+  - openssl
+  - docker
+configuration:
+  properties:
+    config:
+      type: string
+      description: JSON configuration emitted by bk-runner-bridge setup
+    mode:
+      type: string
+      enum: [dispatch, recover, run, doctor]
+      default: dispatch
+    job-id:
+      type: integer
+  required: [config]
+  additionalProperties: false

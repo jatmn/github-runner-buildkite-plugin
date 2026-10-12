@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+plugin_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+export PYTHONPATH="$plugin_root${PYTHONPATH:+:$PYTHONPATH}"
+exec python3 -m runner_bridge.cli plugin

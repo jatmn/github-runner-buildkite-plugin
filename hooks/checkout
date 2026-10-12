@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# Trusted plugin code is all the host needs. PR code belongs inside the runner.
+exit 0

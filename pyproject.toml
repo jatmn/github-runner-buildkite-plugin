@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "buildkite-runner-bridge"
+version = "0.1.0"
+description = "Ephemeral GitHub Actions runners on existing Buildkite pools"
+requires-python = ">=3.11"
+license = "MIT"
+readme = "README.md"
+dependencies = []
+
+[project.scripts]
+bk-runner-bridge = "runner_bridge.cli:main"
+
+[tool.setuptools]
+packages = ["runner_bridge"]
